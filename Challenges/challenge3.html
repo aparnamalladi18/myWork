@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float property challenge</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        .big{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: repeat(4,130px);
+        }
+        .dad,.mom,.fam,.family{
+        background-color: skyblue;
+        border-radius: 7px;
+        padding: 20px;
+        margin: 5px;
+        }
+        #imga,#imgc{
+            height: 85px;
+            width: 85px;
+            float: left;
+            border-radius: 4px;
+            margin-right: 10px;
+           
+        }
+        #imgb,#imgd{
+            height: 85px;
+            width: 85px;
+            float: right;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="dad">
+            <img id="imga" src="father.jpg" alt="Father">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, eos?</div>
+        <div class="mom">
+           <img id="imgb" src="mother.jpg" alt="mother">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, esse!</div>
+        <div class="fam">
+            <img id="imgc" src="fam.jpg" alt="Fam">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quibusdam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, praesentium.</div>
+        <div class="family">
+            <img id="imgd" src="family.jpg" alt="Family">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, officiis.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query challenge</title>
+    <style>
+        h1{
+            color:darkgreen;
+        }
+        .A,.B,.C,.D{
+            color: red; 
+            box-sizing: content-box;
+            padding: 20px;
+            
+        }
+        @media screen and (min-width:1000px){
+            .A{
+                position: absolute;
+                top: 20px;
+                left: 10px;
+                height:150px;
+                width:300px ;
+                background-color: rgba(211, 211, 211, 0.735);
+                margin-top:50px;
+            }
+            .B{
+                position: absolute;
+                top: 20px;
+                left: 340px;
+                height:150px;
+                width:300px ;
+                background-color: rgb(215, 186, 186);
+                margin-top:50px;
+            }
+            .C{
+                position: absolute;
+                top: 20px;
+                left: 670px;
+                height:150px;
+                width: 300px;
+                background-color: rgb(242, 219, 219);
+                margin-top:50px;
+            }
+            .D{
+                position: absolute;
+                top: 20px;
+                left: 1000px;
+                height:150px;
+                width: 300px ;
+                background-color:lightgrey;
+                margin-top:50px;
+            }
+        }
+        @media screen and (min-width:600px) and (max-width:999px){
+            .A{
+                position: absolute;
+                top: 100px;
+                left: 10px;
+                height:150px;
+                width:50%;
+                background-color: rgba(211, 211, 211, 0.735);
+            }
+            .B{
+                position: absolute;
+                
+                top: 100px;
+                left: 340px;
+                height:150px;
+                width:50%;
+                background-color: rgb(215, 186, 186);
+
+            }
+            .C{
+                position: absolute;
+                top: 270px;
+                left: 10px;
+                height:150px;
+                width: 50%;
+                background-color: rgb(242, 219, 219);
+            }
+            .D{
+                position: absolute;
+                top: 270px;
+                left: 340px;
+                height:150px;
+                width: 50% ;
+                background-color:lightgrey;
+
+            }
+        }
+        @media screen and (max-width:599px){
+            h1{
+                width: 90%;
+            }
+            .A{
+                position: absolute;
+                top: 150px;
+                left: 5px;
+                height:150px;
+                width:100%;
+                background-color: rgba(211, 211, 211, 0.735);
+            }
+            .B{
+                position: absolute;
+                
+                top: 320px;
+                left: 5px;
+                height:150px;
+                width:100%;
+                background-color: rgb(215, 186, 186);
+
+            }
+            .C{
+                position: absolute;
+                top: 490px;
+                left: 5px;
+                height:150px;
+                width: 100%;
+                background-color: rgb(242, 219, 219);
+            }
+            .D{
+                position: absolute;
+                top: 660px;
+                left: 5px;
+                height:150px;
+                width: 100% ;
+                background-color:lightgrey;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Media Query for Columns-Increase or decrease the screen size to see the change</h1>
+    
+     <div>
+        <div class="A">
+            <h2>Name1</h2>
+            <p>I am Aparna</p>
+        </div>
+        <div class="B">
+            <h2>Name2</h2>
+            <p>I am Akshara</p>
+        </div>
+        <div class="C">
+            <h2>Name3</h2>
+            <p>I am Thor</p>
+        </div>
+        <div class="D">
+            <h2>Name4</h2>
+            <p>We are a Family</p>
+        </div>
+
+     </div>
+
+</body>
+</html>

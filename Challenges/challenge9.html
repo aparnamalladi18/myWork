@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid 2</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .nest0{
+            display: grid;
+            grid-template-columns: 20vw 80vw;
+            grid-gap: 10px;
+        }
+        .nest1{
+            background-color: yellow;
+            padding: 20px;
+
+        }
+
+        .nest2{
+            display: grid;
+            grid-template-rows: 25vh 50vh 25vh;
+            grid-gap: 10px;
+        }
+        .nest22{
+            background-color: yellow;
+            padding: 20px;
+        }
+        .nest22v{
+            display: grid;
+            grid-template-columns: 65vw 35vw;
+            grid-gap: 10px;
+        }
+        .nest222{
+            background-color: yellow;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nest0">
+        <div class="nest1">Nav</div>
+        <div class="nest2">
+           <div class="nest22">Header</div>
+           <div class="nest22v">
+              <div class="nest222">Article</div>
+              <div class="nest222">Ads</div>
+           </div>
+           <div class="nest22">Footer</div>
+        </div>
+    </div>
+</body>
+</html>
