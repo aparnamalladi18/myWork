@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+        <ul>
+            <li>First element</li>
+            <li>Second element</li>
+            <li>Third element</li>
+        </ul>
+        <table>
+            <tr>
+                <td>1:1</td>
+                <td>2:1</td>
+                <td>3:1</td>
+                <td>4:1</td>
+                <td>5:1</td>
+            </tr>
+            <tr>
+                <td>1:2</td>
+                <td>2:2</td>
+                <td>3:2</td>
+                <td>4:2</td>
+                <td>5:2</td>
+            </tr>
+            <tr>
+                <td>1:3</td>
+                <td>2:3</td>
+                <td>3:3</td>
+                <td>4:3</td>
+                <td>5:3</td>
+            </tr>
+            <tr>
+                <td>1:4</td>
+                <td>2:4</td>
+                <td>3:4</td>
+                <td>4:4</td>
+                <td>5:4</td>
+            </tr>
+            <tr>
+                <td>1:5</td>
+                <td>2:5</td>
+                <td>3:5</td>
+                <td>4:5</td>
+                <td>5:5</td>
+            </tr>
+        </table>
+        <br> <br> <br>
+        <button id="clickBtn" onclick="alert('Namaste World')">Click me</button>
+        <script>
+            //Root node
+            console.log(document.documentElement); // window object ke saath attached Global variable is called document. 
+            console.log(document.body);
+            console.log(document.head);
+            //children
+            console.log(document.body.childNodes);
+            console.log(document.body.children);
+            // for (let node of document.body.children){
+            //     console.log(node);
+            // }
+            console.log(document.body.firstChild);
+            console.log(document.body.lastChild);
+            console.log(document.body.firstElementChild);
+            console.log(document.body.lastElementChild);
+            console.log('BREAK');
+            const childofBody = Array.from(document.body.children); // converting them into array.
+            console.log(childofBody);
+
+            //siblings
+            console.log("SIBLINGS");
+            const ulTag = document.body.children[0]
+            console.log(ulTag.nextElementSibling);
+            // code is there...
+            //Tables
+            const tableTag = document.body.children[1];
+            console.log(tableTag.tBodies[0].rows[0].style="background-color:violet;");
+            console.log(tableTag.tBodies[0].rows[1].style="background-color:lavender;");
+            console.log(tableTag.tBodies[0].rows[2].style="background-color:coral;");
+            console.log(tableTag.tBodies[0].rows[3].style="background-color:pink;");
+            console.log(tableTag.tBodies[0].rows[4].style="background-color:green;");
+            // function call(){
+            //     alert("Thanks! :)")
+            // }
+            // clickBtn.onClick= call();
+            //Events
+           
+        </script>
+</body>
+</html>
+
+
+
